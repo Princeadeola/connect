@@ -448,6 +448,7 @@ main .container .right{
 	bottom: 0;
 }
 
+/*---- messages -----*/
 .right .messages{
 	background: var(--color-white);
 	border-radius: var(--card-border-radius);
@@ -488,11 +489,24 @@ main .container .right{
 	border-color: var(--color-dark);
 }
 
+.right .messages .message-requests{
+	color: var(--color-primary);
+}
+
 .right .messages .message{
 	display: flex;
 	gap: 1rem;
 	margin-bottom: 1rem;
 	align-items: start;
+}
+
+.right .message .profile-picture{
+	position: relative;
+	overflow: visible;
+}
+
+.right .profile-picture img{
+	border-radius: 50%;
 }
 
 .right .messages .message:last-child{
@@ -501,6 +515,45 @@ main .container .right{
 
 .right .messages .message p{
 	font-size: 0.8rem;
+}
+
+.right .messages .message .profile-picture .active{
+	width: 0.8rem;
+	height: 0.8rem;
+	border-radius: 50%;
+	border: 3px solid var(--color-light);
+	background: var(--color-success);
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+/*------- Friend requests --------*/
+.right .friend-requests{
+	margin-top: 1rem;
+}
+
+.right .friend-requests h4{
+	color: var(--color-gray);
+	margin: 1rem 0;
+}
+
+.right .request{
+	background: var(--color-white);
+	padding: var(--card-padding);
+	border-radius: var(--card-border-radius);
+	margin-bottom: 0.7rem;
+}
+
+.right .request .info{
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.right .request .action{
+	display: flex;
+	gap: 1rem;
 }
 
 /* ------------------------------ Right styling ends ------------------------- */
